@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Locadora</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,400;6..12,700&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+</head>
+<body>
+
+    <header>
+        <h1>Locadora Tabajara</h1>
+    </header>
+
+    <main>
+        <div class="title">
+            <h2>Carros Disponíveis</h2>
+            <span>Lista de carros disponíveis para locação</span>
+        </div>
+
+        <div class="card">
+            <div class="lineInput">
+                <label>Marca</label>
+                <input type="text" id="marca" placeholder="Marca do carro">
+            </div>
+
+            <div class="lineInput">
+                <label>Modelo</label>
+                <input type="text" id="modelo" placeholder="Modelo do carro">
+            </div>
+
+            <div class="lineInput">
+                <label>Ano</label>
+                <input type="text" id="ano" placeholder="Ano do carro">
+            </div>
+
+            <div class="lineInput">
+                <label>Cor</label>
+                <input type="text" id="cor" placeholder="Cor do carro">
+            </div>
+
+            <div class="lineInput">
+                <label>Valor</label>
+                <input type="text" id="valor" placeholder="Valor do carro">
+            </div>
+
+
+            <button onclick="carros.adicionar()">Adicionar</button>
+            <button onclick="carros.deletar()">Excluir</button>
+        </div>
+
+        <div class="content">
+            <table border="1">
+                <thead>
+                    <th class="center">ID</th>
+                    <th>Marca</th>
+                    <th>Modelo</th>
+                    <th>Ano</th>
+                    <th>Cor</th>
+                    <th>Valor</th>
+                    <th class="center">Ações</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="center">1</td>
+                        <td>fiat</td>
+                        <td>uno</td>
+                        <td>2006</td>
+                        <td>preto</td>
+                        <td>15000</td>
+                        <td class="center">
+                            <img src="../img/edit.png" alt="">
+                            <img src="../img/delete.png" alt="">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+    </main>
+    
+    
+</body>
+</html>
